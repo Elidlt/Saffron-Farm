@@ -1,0 +1,9 @@
+{% if workerList %}
+    <ul>
+    {% for person in workerList %}
+        <li><a href="/Manage/{{ person.id }}/">{{ person.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Workers are available.</p>
+{% endif %}
